@@ -4,6 +4,10 @@
   --hover-color: #1e1e2488;
   --border-color: #1e1e2433;
   --checked-color: 	#00FA9A88;
+  --red-color: #e06259;
+  --blue-color: #5369b9;
+  --orange-color: #ffcf99;
+
 }
 
 * {
@@ -243,7 +247,7 @@ nav div div ul li a {
   left: calc(50% - 537px);
   width: 547px;
   height: 547px;
-  background: radial-gradient(50% 50% at 50% 50%, #e06259 0, #e0625900 100%);
+  background: radial-gradient(50% 50% at 50% 50%, var(--red-color) 0, #e0625900 100%);
 }
 
 .gradient-blue {
@@ -251,7 +255,7 @@ nav div div ul li a {
   left: calc(50% - 274px);
   width: 793px;
   height: 793px;
-  background: radial-gradient(50% 50% at 50% 50%, #5369b9 0, #5369b900 100%);
+  background: radial-gradient(50% 50% at 50% 50%, var(--blue-color) 0, #5369b900 100%);
 }
 
 .gradient-yellow {
@@ -259,7 +263,7 @@ nav div div ul li a {
   left: calc(50% - 462px);
   width: 596px;
   height: 596px;
-  background: radial-gradient(50% 50% at 50% 50%, #ffcf99 0, #ffcf9900 100%);
+  background: radial-gradient(50% 50% at 50% 50%, var(--orange-color) 0, #ffcf9900 100%);
 }
 
 footer {
