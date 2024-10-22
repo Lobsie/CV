@@ -278,12 +278,14 @@ nav div div ul li a {
 
 .content-small {
   flex-basis: 100%;
+  align-content: center;
   border: 1px solid var(--border-color);
   padding: 10px;
 }
 
 .content-large {
   flex-basis: 100%;
+  text-align: left;
   border: 1px solid var(--border-color);
   padding: 10px;
 }
