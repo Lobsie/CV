@@ -30,7 +30,7 @@ h1, h2, h3, p {
 
 h1 {
   font-family: "Merriweather", serif;
-  font-size: 5.625rem;
+  font-size: 5rem;
   margin-bottom: 80px;
 }
 
@@ -266,12 +266,46 @@ nav div div ul li a {
   background: radial-gradient(50% 50% at 50% 50%, var(--orange-color) 0, #ffcf9900 100%);
 }
 
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 100px 20px 100px;
+  margin: 75px auto;
+  max-width: 1080px;
+}
+
+.content-small {
+  flex-basis: 100%;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.content-large {
+  flex-basis: 100%;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.background-red {
+  background-color: var(--red-color);
+}
+
+.background-blue {
+  background-color: var(--blue-color);
+}
+
+.background-orange {
+  background-color: var(--orange-color);
+}
+
 footer {
   background-color: var(--main-background-color);
   color: var(--text-color);
   margin: 0 auto;
   padding: 50px 20px 0;
-  max-width: 860px;
+  max-width: 1080px;
 }
 
 footer .footer-container {
@@ -292,7 +326,7 @@ footer div p {
 
 /* style nav for desktop */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1038px) {
   .nav-header .toggler,
   .nav-header .hamburger {
     display: none;
@@ -365,5 +399,13 @@ footer div p {
 
   nav div div ul li a:after {
     transform-origin: 0% 50%;
+  }
+
+  .content-small {
+    flex-basis: 29%;
+  }
+  
+  .content-large {
+    flex-basis: 70%;
   }
 }
